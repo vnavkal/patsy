@@ -734,6 +734,7 @@ def design_matrix_builders(termlists, data_iter_maker, eval_env,
         design_infos.append(DesignInfo(column_names,
                                        factor_infos=this_design_factor_infos,
                                        term_codings=term_to_subterm_infos))
+    import pdb; pdb.set_trace()
     return design_infos
 
 def _build_design_matrix(design_info, factor_info_to_values, dtype):
